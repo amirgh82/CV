@@ -1,0 +1,47 @@
+:root {
+  --white: #fff;
+  --gray: #676767;
+  --tosi: #c2c2c2;
+  --blue: #2f55d4;
+  --blue-hover: #092ca1;
+  --icon-color:#e3e8f8;
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url(/public/fonts/Vazirmatn-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'vazir-black';
+  src: url(/public/fonts/Vazirmatn-Black.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'vazir';
+  font-weight: 700;
+  scroll-snap-type: y mandatory;
+}
+
+a {
+  color: var(--white);
+}
+
+::placeholder {
+  font-family: 'vazir';
+  font-size: 0.5rem;
+  padding-right: 5px;
+}
+
+label {
+  font-size: 0.7rem;
+  padding: 0.7rem 0;
+}

@@ -1,0 +1,35 @@
+.feature {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.features-icon {
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    color: var(--blue);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.3rem;
+}
+
+.features-content{
+    margin-right: 1rem;
+}
+.features-content-title {
+    font-size: 1rem;
+}
+
+.features-content-detail {
+    font-size: 0.7rem;
+    color: var(--gray);
+}
+
+@media (max-width: 767px){
+    .feature{
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+}

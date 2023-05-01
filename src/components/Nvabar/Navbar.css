@@ -1,0 +1,280 @@
+.navbar-container {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    color: var(--white);
+    z-index: 999;
+    scroll-snap-align: start;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* navbar lists  */
+
+.navbar-lists {
+    display: flex;
+
+}
+
+.navbar-item {
+    margin: 0 1rem;
+}
+
+.link {
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #7b7b7b;
+}
+
+.subbar {
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.subbar-lists {
+    position: absolute;
+    right: 30px;
+    width: 100px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: none;
+}
+
+.subbar-item {
+    margin: 0.5rem;
+}
+
+.subbar-link {
+    color: black;
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+
+.subbar-link:hover {
+    padding-right: 2.2rem;
+}
+
+.subbar-link::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0.3rem;
+    border-radius: 5rem;
+    background-color: var(--blue);
+    transition: all 250ms ease-in-out;
+}
+
+.subbar-link:hover::before {
+    width: 1.6rem;
+}
+
+.subbar:hover .subbar-lists {
+    display: block;
+}
+
+/* navbar media  */
+
+.media-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    cursor: pointer;
+    color: var(--white);
+}
+
+.input-search {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 1.5rem;
+    margin-right: 5px;
+    display: none;
+}
+
+.show-input {
+    display: block;
+}
+
+.media {
+    margin: 0 0.3rem;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media:hover {
+    background-color: var(--blue-hover);
+}
+
+.nav-btn {
+    background-color: var(--white);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-line {
+    display: block;
+    width: 1.7rem;
+    height: 0.1rem;
+    background-color: var(--blue);
+    border-radius: 3rem;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.btn-line::after {
+    content: ' ';
+    position: absolute;
+    top: 0.5rem;
+    width: 1.7rem;
+    height: 0.1rem;
+    border-radius: 3rem;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-line::before {
+    content: ' ';
+    position: absolute;
+    top: -0.5rem;
+    width: 1.7rem;
+    height: 0.1rem;
+    border-radius: 3rem;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-open .btn-line::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.btn-open .btn-line::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.btn-open .btn-line {
+    background-color: transparent;
+}
+
+.navbar-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: var(--blue);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.navbar-mobile-titr {
+    font-size: 1.1rem;
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-mobile-title {
+    color: #afafaf;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar-mobile-lists {
+    margin: 0.2rem 0.5rem;
+}
+
+.subbers {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-mobile-subber {
+    margin: 0.3rem 1.5rem;
+}
+
+.media-container-mobile {
+    display: flex;
+}
+
+@media(max-width:1200px) {
+    .logo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .navbar-container {
+        position: absolute;
+    }
+
+    .navbar-lists {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar-lists {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        right: 50px;
+    }
+
+    .nav-btn {
+        display: flex;
+        position: absolute;
+        left: 50px;
+    }
+
+    .open-nav {
+        display: flex;
+    }
+
+    .media-container {
+        display: none;
+    }
+}
