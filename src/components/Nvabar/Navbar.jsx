@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <div className={`navbar-container `}>
-
+            <div></div>
             <navbar className="navbar">
                 <div className={`nav-btn ${btnToggle ? 'btn-open' : ''}`}
                     onClick={() => setBtnToggle(prev => !prev)}
