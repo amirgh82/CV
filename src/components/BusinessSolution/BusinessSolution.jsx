@@ -3,8 +3,13 @@ import './BusinessSolution.css'
 
 export default function BusinessSolution() {
     return (
-        <div>
-            
+        <div className='business-solution'>
+            <div className="business-solution-picture">
+
+            </div>
+            <div className="business-solution-detail">
+
+            </div>
         </div>
     )
 }
