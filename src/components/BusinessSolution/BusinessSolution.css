@@ -2,6 +2,8 @@
     width: 100%;
 }
 
+/* Business solution images css */
+
 .business-solution-picture {
     width: 50%;
     display: flex;
@@ -36,7 +38,7 @@
 }
 
 .image-business:hover {
-    transform: scale(1.1) rotate(-3deg);
+    transform: rotate(-3deg);
 }
 
 .image-business::after {
@@ -68,6 +70,15 @@
 .image-business:hover .image-business-title {
     display: block;
 }
+
+/* Business solution detail css */
+
+
+
+
+
+
+/* Responsive Code */
 
 @media(max-width:1200px) {
     .image-business {
