@@ -1,5 +1,8 @@
 .business-solution {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Business solution images css */
@@ -23,6 +26,7 @@
     overflow: hidden;
     transition: all 1s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .image-business:nth-child(1) {
@@ -73,8 +77,45 @@
 
 /* Business solution detail css */
 
+.business-solution-detail {
+    width: 40%;
+}
 
+.detail-about-me {
+    padding: 1px 10px;
+    border: 1px solid palevioletred;
+    background-color: plum;
+    color: var(--gray);
+    border-radius: 30px;
+    font-size: 0.5rem;
+}
 
+.detail-title {
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.detail-des {
+    font-size: 0.7rem;
+    color: var(--gray);
+}
+
+.detail-section1 {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+
+.detail-section1-title {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.datail-section1-des {
+    font-size: 0.7rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
 
 
 
@@ -99,5 +140,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .business-solution-detail {
+        width: calc(100% - 100px);
+        margin: 0 auto;
     }
 }
