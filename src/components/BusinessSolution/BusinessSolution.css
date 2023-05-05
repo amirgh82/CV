@@ -68,3 +68,25 @@
 .image-business:hover .image-business-title {
     display: block;
 }
+
+@media(max-width:1200px) {
+    .image-business {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .image-business {
+        width: 150px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .business-solution-picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
