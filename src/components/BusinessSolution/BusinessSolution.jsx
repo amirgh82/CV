@@ -5,9 +5,15 @@ export default function BusinessSolution() {
     return (
         <div className='business-solution'>
             <div className="business-solution-picture">
-                <img src="/images/business-solution1.jpg" className="business-solution-img image-business" />
-                <img src="/images/business-solution2.jpg" className="business-solution-img image-business" />
-                <img src="/images/business-solution3.jpg" className="business-solution-img image-business" />
+                <div className="image-business">
+                    <h6 className='image-business-title'>امیررضا</h6>
+                </div>
+                <div className="image-business">
+                    <h6 className='image-business-title'>سوفیا</h6>
+                </div>
+                <div className="image-business">
+                    <h6 className='image-business-title'> محمد حسین</h6>
+                </div>
             </div>
             <div className="business-solution-detail">
 
