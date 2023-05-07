@@ -1,10 +1,15 @@
 import React from 'react'
-import './BusinessPlanBox.css' 
+import './BusinessPlanBox.css'
 
-export default function BusinessPlanBox() {
+export default function BusinessPlanBox({ title, icon }) {
   return (
-    <div>
-        
+    <div className='business-plan-box'>
+      <span className="business-plan-box-icon">
+        {icon}
+      </span>
+      <span className="business-plan-box-title">
+        {title}
+      </span>
     </div>
   )
 }

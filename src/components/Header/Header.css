@@ -94,17 +94,6 @@
     margin: 1rem;
 }
 
-.click-modal-open {
-    cursor: pointer;
-    color: var(--blue);
-}
-
-.modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-}
 
 @keyframes BG-left-to-right {
 
