@@ -10,8 +10,12 @@ import Statistics from '../../components/Statistics/Statistics'
 
 export default function Home() {
 
+    const windowScrollHandler = (event) => {
+        console.log(event);
+    }
+
     return (
-        <div className='home'>
+        <div className='home' onScroll={windowScrollHandler}>
             <Header />
             <div className="features">
                 <Features icon={<FcBarChart />} title='تجزیه و تحلیل داده' detail='ساخته شده به زبان شبه لاتین که.' ></Features>

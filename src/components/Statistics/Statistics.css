@@ -1,0 +1,38 @@
+.statistics {
+    display: flex;
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: url('./../../../public/images/cta.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.statistics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tosi);
+    opacity: 0.3;
+}
+
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.statistics-detail{
+    color: #ffffff;
+    font-size: 1rem;
+}

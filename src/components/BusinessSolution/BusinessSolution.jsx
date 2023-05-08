@@ -67,15 +67,15 @@ export default function BusinessSolution() {
                 <h3 className="business-plans-title">ما راه حل های فناوری اطلاعات و تجارت ارائه می دهیم</h3>
                 <p className="detail Business-plans-detail">شروع به کار با لنـدریـک که می تواند هر آنچه را که شما برای ایجاد آگاهی ، ایجاد ترافیک ، اتصال به آن نیاز دارید فراهم کند.</p>
                 <div className="business-plan">
-                    {businessPlanBoxData.map(plan => (
-                        <BusinessPlanBox {...plan} />
+                    {businessPlanBoxData.map((plan, index) => (
+                        <BusinessPlanBox {...plan} key={index + 1} />
                     ))}
                 </div>
 
                 <Button >
                     نمایش بیشتر <BsFillArrowLeftCircleFill />
                 </Button>
-           </div>
+            </div>
         </>
     )
 }
