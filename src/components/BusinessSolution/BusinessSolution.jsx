@@ -75,7 +75,7 @@ export default function BusinessSolution() {
                 <Button >
                     نمایش بیشتر <BsFillArrowLeftCircleFill />
                 </Button>
-            </div>
+           </div>
         </>
     )
 }

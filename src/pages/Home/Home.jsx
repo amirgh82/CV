@@ -5,6 +5,7 @@ import { FcBarChart, FcSelfServiceKiosk, FcVideoProjector } from 'react-icons/fc
 import { MdAccessibilityNew } from 'react-icons/md'
 import './Home.css'
 import BusinessSolution from '../../components/BusinessSolution/BusinessSolution'
+import Statistics from '../../components/Statistics/Statistics'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
                 <Features icon={<MdAccessibilityNew />} title='تیم اختصاصی' detail='ساخته شده به زبان شبه لاتین که.' ></Features>
             </div>
             <BusinessSolution />
+            <Statistics />
         </div>
     )
 }
