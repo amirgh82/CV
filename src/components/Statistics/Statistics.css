@@ -10,6 +10,7 @@
     border-radius: 20px;
     position: relative;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 .statistics::before {
@@ -32,7 +33,7 @@
     color: #fff;
 }
 
-.statistics-detail{
+.statistics-detail {
     color: #ffffff;
     font-size: 1rem;
 }
