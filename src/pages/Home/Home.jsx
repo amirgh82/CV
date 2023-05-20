@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/Header/Header'
 import Features from '../../components/Features/Features'
 import { FcBarChart, FcSelfServiceKiosk, FcVideoProjector } from 'react-icons/fc'
@@ -10,12 +10,10 @@ import Statistics from '../../components/Statistics/Statistics'
 
 export default function Home() {
 
-    const windowScrollHandler = (event) => {
-        console.log(event);
-    }
+
 
     return (
-        <div className='home' onScroll={windowScrollHandler}>
+        <div className='home'>
             <Header />
             <div className="features">
                 <Features icon={<FcBarChart />} title='تجزیه و تحلیل داده' detail='ساخته شده به زبان شبه لاتین که.' ></Features>
@@ -25,6 +23,8 @@ export default function Home() {
             </div>
             <BusinessSolution />
             <Statistics />
+
         </div>
+
     )
 }
