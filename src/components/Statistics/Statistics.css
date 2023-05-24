@@ -1,9 +1,10 @@
 .statistics {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 70%;
     height: 50vh;
     margin: 0 auto;
-    justify-content: space-around;
     background: url('./../../../public/images/cta.jpg');
     background-position: top;
     background-repeat: no-repeat;
@@ -11,6 +12,7 @@
     position: relative;
     font-size: 2rem;
     overflow: hidden;
+    z-index: -100;
 }
 
 .statistics::before {
