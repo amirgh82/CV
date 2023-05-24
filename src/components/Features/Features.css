@@ -22,14 +22,17 @@
     font-size: 1rem;
 }
 
-.features-content-detail {
-    font-size: 0.7rem;
-    color: var(--gray);
-}
 
 @media (max-width: 767px){
     .feature{
         margin-bottom: 1rem;
         justify-content: center;
+    }
+    .features-content-title{
+        font-size: 0.8rem;
+    }
+
+    .features-content-detail{
+        font-size: 0.6rem;
     }
 }

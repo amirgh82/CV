@@ -44,19 +44,19 @@ export default function BusinessSolution() {
                 <div className="business-solution-detail">
                     <span className="detail-about-me">درباره ما</span>
                     <h3 className="detail-title">راه حل های کسب و کار شما</h3>
-                    <p className="detail">
+                    <p className="text-gray">
                         مشهورترین متن ساختگی "لورم ایپسوم " است که گفته می شود از قرن 16 پدید آمده است. لورم ایپسوم در یک زبان شبه لاتین ساخته شده است که کم و بیش با لاتین "مناسب" مطابقت دارد. این شامل یک سری کلمات واقعی لاتین است.
                     </p>
                     <div className="detail-section1">
                         <FaGgCircle />
                         <h5 className="detail-section1-title">بحث گروهی جذاب​</h5>
                     </div>
-                    <p className="detail">هنگامی که متن ساختگی نسبتاً واقع بینانه باشد ، به گونه ای سودمند خواهد بود که طرح بندی ایجاد شود</p>
+                    <p className="text-gray">هنگامی که متن ساختگی نسبتاً واقع بینانه باشد ، به گونه ای سودمند خواهد بود که طرح بندی ایجاد شود</p>
                     <div className="detail-section1">
                         <FaGgCircle />
                         <h5 className="detail-section1-title">مهندسی نرم افزار​</h5>
                     </div>
-                    <p className="detail">هنگامی که متن ساختگی نسبتاً واقع بینانه باشد ، به گونه ای سودمند خواهد بود که طرح بندی ایجاد شود</p>
+                    <p className="text-gray">هنگامی که متن ساختگی نسبتاً واقع بینانه باشد ، به گونه ای سودمند خواهد بود که طرح بندی ایجاد شود</p>
                     <Button className='detail-btn'>
                         ادامه مطلب <AiOutlineLeft />
                     </Button>
@@ -65,7 +65,7 @@ export default function BusinessSolution() {
 
             <div className="Business-plans">
                 <h3 className="business-plans-title">ما راه حل های فناوری اطلاعات و تجارت ارائه می دهیم</h3>
-                <p className="detail Business-plans-detail">شروع به کار با لنـدریـک که می تواند هر آنچه را که شما برای ایجاد آگاهی ، ایجاد ترافیک ، اتصال به آن نیاز دارید فراهم کند.</p>
+                <p className="business-plans-detail text-gray">شروع به کار با لنـدریـک که می تواند هر آنچه را که شما برای ایجاد آگاهی ، ایجاد ترافیک ، اتصال به آن نیاز دارید فراهم کند.</p>
                 <div className="business-plan">
                     {businessPlanBoxData.map((plan, index) => (
                         <BusinessPlanBox {...plan} key={index + 1} />

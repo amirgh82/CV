@@ -33,14 +33,14 @@
 
 
 
-.mini-title {
+.text-gray {
     color: var(--tosi);
     font-size: 0.8rem;
+    margin: 1rem 0;
+    width: 100%;
 }
 
 .detail {
-    color: var(--tosi);
-    font-size: 0.8rem;
     margin: 1rem 0;
 }
 
@@ -132,27 +132,36 @@
     }
 
     .mini-title {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .title {
-        font-size: 1rem;
-    }
-
-    .detail {
-        font-size: 0.6rem;
-    }
-
-    .btn {
-        width: 5rem;
-        height: 1.5rem;
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width:570px) {
+    .right-section {
+        font-size: 1rem;
+    }
+
     .left-section {
-        width: 100%;
-        margin: 5rem 2rem 0 2rem;
+        width: calc(100%-10px);
+        margin: 5rem 2rem 2rem 2rem;
+    }
+
+    .form-title,
+    .input-container,
+    .checkbox-detail {
+        font-size: 0.5rem;
+    }
+
+    .form-detail {
+        font-size: 0.7rem;
+    }
+
+    .detail {
+        margin: 0.5rem 1rem;
+        width: 10rem;
     }
 }

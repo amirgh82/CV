@@ -11,10 +11,10 @@ export default function Header() {
         <header className='header'>
             <div className="header-content">
                 <section className="right-section">
-                    <span className='mini-title'>نرم افزار و طراحی اطلاعات</span>
+                    <span className='mini-title text-gray'>نرم افزار و طراحی اطلاعات</span>
                     <h1 className='title'> نوآورانه پیشرفته <br />
                         راه حل های اطلاعات .</h1>
-                    <p className="detail">کمپین خود را راه اندازی کنید و از تخصص ما در زمینه طراحی و مدیریت صفحه <br /> بوت استرپ v5 html تبدیل محور بهره مند شوید.</p>
+                    <p className="detail text-gray">کمپین خود را راه اندازی کنید و از تخصص ما در زمینه طراحی و مدیریت صفحه <br /> بوت استرپ v5 html تبدیل محور بهره مند شوید.</p>
                     <div className="contacts">
                         <ButtonDependencies>تماس با ما  <FiPhoneCall />  </ButtonDependencies>
                     </div>

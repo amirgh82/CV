@@ -1,10 +1,11 @@
 :root {
   --white: #fff;
   --gray: #676767;
-  --tosi: #7a7a7a;
+  --tosi: #adadad;
   --blue: #2f55d4;
   --blue-hover: #092ca1;
-  --icon-color:#e3e8f8;
+  --icon-color: #e3e8f8;
+  --dark: #000;
 }
 
 @font-face {

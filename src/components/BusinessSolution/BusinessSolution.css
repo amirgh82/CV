@@ -62,7 +62,6 @@
 
 .image-business-title {
     display: none;
-
     color: var(--white);
     z-index: 111;
     font-size: 1.1rem;
@@ -93,11 +92,6 @@
 .detail-title {
     font-size: 1.5rem;
     margin: 0.8rem 0;
-}
-
-.detail-des {
-    font-size: 0.7rem;
-    color: var(--gray);
 }
 
 .detail-section1 {
@@ -132,17 +126,16 @@
     font-size: 1.5rem;
 }
 
-.Business-plans-detail {
+.business-plans-detail {
     width: 30rem;
-    
 }
 
-.business-plan{
+.business-plan {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 10rem;
+    padding: 3rem 2rem;
     width: 90%;
-   justify-content: center;
+    justify-content: center;
 }
 
 /* Responsive Code */
@@ -170,6 +163,32 @@
 
     .business-solution-detail {
         width: calc(100% - 100px);
-        margin: 0 auto;
+        margin: 2rem auto;
+    }
+
+    .business-plans-title {
+        font-size: 1rem;
+    }
+
+    .business-plans-detail {
+        width: 15rem;
+        font-size: 0.8rem;
+    }
+
+    .business-plan {
+        padding: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .detail-title {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:320px) {
+    .business-plans-detail{
+        width:5rem;
+        font-size: 0.5rem;
     }
 }

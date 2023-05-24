@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { FaFacebookF } from 'react-icons/fa'
@@ -16,10 +16,14 @@ export default function Navbar() {
     const [isShowSearchInput, setIsShowSearchInput] = useState(false)
     const [btnToggle, setBtnToggle] = useState(false)
 
+    const scrollHandler = (event) => {
+        console.log(event.pageY);
+    }
+
+
 
     return (
-        <div className={`navbar-container `}>
-            <div></div>
+
             <navbar className="navbar">
                 <div className={`nav-btn ${btnToggle ? 'btn-open' : ''}`}
                     onClick={() => setBtnToggle(prev => !prev)}
@@ -37,16 +41,16 @@ export default function Navbar() {
                         <Link className='link subbar'>صفحات
                             <ul className="subbar-lists">
                                 <li className="subbar-item">
-                                    <Link className='subbar-link'>ایمیل</Link>
+                                    <Link className='subbar-link'>صفحه1</Link>
                                 </li>
                                 <li className="subbar-item">
-                                    <Link className='subbar-link'>ایمیل</Link>
+                                    <Link className='subbar-link'>صفحه2</Link>
                                 </li>
                                 <li className="subbar-item">
-                                    <Link className='subbar-link'>ایمیل</Link>
+                                    <Link className='subbar-link'>صفحه3</Link>
                                 </li>
                                 <li className="subbar-item">
-                                    <Link className='subbar-link'>ایمیل</Link>
+                                    <Link className='subbar-link'>صفحه4</Link>
                                 </li>
                             </ul>
                         </Link>
@@ -84,10 +88,10 @@ export default function Navbar() {
                     <ul className="navbar-mobile-lists">
                         <li className="navbar-mobile-list"><Link className="navbar-mobile-link">صفحه اصلی</Link></li>
                         <li className="navbar-mobile-list subbers"><Link className="navbar-mobile-link">صفحات <AiOutlineDown /></Link></li>
-                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">ایمیل</Link></li>
-                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">ایمیل</Link></li>
-                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">ایمیل</Link></li>
-                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">ایمیل</Link></li>
+                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">صفحه1</Link></li>
+                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">صفحه2</Link></li>
+                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">صفحه3</Link></li>
+                        <li className="navbar-mobile-subber"><Link className="navbar-mobile-link">صفحه4</Link></li>
                         <li className="navbar-mobile-list"><Link className="navbar-mobile-link">اسناد</Link></li>
                     </ul>
                     <div className="media-container-mobile">
@@ -107,7 +111,6 @@ export default function Navbar() {
                 </div>
             </navbar>
 
-        </div>
 
     )
 }

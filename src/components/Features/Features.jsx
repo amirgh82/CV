@@ -10,7 +10,7 @@ export default function Features({ icon, title, detail }) {
                 <h5 className='features-content-title'>
                     {title}
                 </h5>
-                <p className="features-content-detail">
+                <p className="features-content-detail text-gray">
                     {detail}
                 </p>
             </div>
