@@ -32,10 +32,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--white);
 }
 
 .statistics-detail {
-    color: #ffffff;
+    color: var(--white);
     font-size: 1rem;
 }
