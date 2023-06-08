@@ -1,0 +1,25 @@
+.comment {
+    min-width: 10rem;
+    max-width: 12rem;
+    height: 10rem;
+    border: 1px solid var(--tosi);
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 0.5rem ;
+    position: relative;
+    border-top-right-radius: 0;
+}
+
+
+.comment-description {
+    color: var(--gray);
+}
+
+.comment-writer {
+    color: var(--blue);
+    font-size: 0.6rem;
+}

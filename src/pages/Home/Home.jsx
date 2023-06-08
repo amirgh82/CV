@@ -6,7 +6,7 @@ import { MdAccessibilityNew } from 'react-icons/md'
 import './Home.css'
 import BusinessSolution from '../../components/BusinessSolution/BusinessSolution'
 import Statistics from '../../components/Statistics/Statistics'
-
+import Comments from '../../components/Comments/Comments'
 
 export default function Home() {
 
@@ -23,6 +23,7 @@ export default function Home() {
             </div>
             <BusinessSolution />
             <Statistics />
+            <Comments/>
 
         </div>
 

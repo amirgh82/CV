@@ -1,0 +1,23 @@
+.comments-container{
+    margin: 5rem;
+}
+
+.swiper-wrapper{
+    justify-content: center;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: .8rem !important;
+    height: .8rem !important;
+    border: 2px solid var(--blue) !important;
+    background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--blue) !important;
+}
