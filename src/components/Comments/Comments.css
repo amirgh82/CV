@@ -4,6 +4,7 @@
 
 .swiper-wrapper{
     justify-content: center;
+    cursor:e-resize;
 }
 
 .swiper-pagination {
